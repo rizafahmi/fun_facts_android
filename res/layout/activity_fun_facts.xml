@@ -4,10 +4,11 @@
     android:layout_height="match_parent"
     android:background="#51b46d"
     android:padding="50dp"
+    android:id="@+id/relativeLayout"
     tools:context="${relativePackage}.${activityClass}" >
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/factTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -22,7 +23,7 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView2"
+        android:layout_alignStart="@+id/factTextView"
         android:layout_centerVertical="true"
         android:text="Ants stretch when wakes up in the morning."
         android:textColor="#fff"
@@ -36,5 +37,13 @@
         android:layout_centerHorizontal="true"
         android:background="#fff"
         android:text="Show another fun fact" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/factTextView" />
 
 </RelativeLayout>
